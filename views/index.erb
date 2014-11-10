@@ -1,0 +1,22 @@
+  <div style='border: 3px dashed red'>   
+  <% if @visitor %>     
+    Hello, <%= @visitor %>!   
+  <% else %>
+    <form action="/hello">
+      My name is <%= @name %>.
+      What's your name?
+      <input type="text" name="name">
+      <input type="submit">
+    </form>    
+  <% end %>
+  <img src='/images/kitten.png'>
+  <!-- # Note the lack of a slash in the beginning of the URL. This means that the path is relative to the current URL path: -->
+</div>
+
+<!-- In this case we have two "input" fields. The first one is the input field (because it has type "text") and the second one is the submit button (because it has type "submit"). Even though they look and act differently, they are both created by the input tag.
+
+Since the second input tag doesn't have any data in it (it's a button, after all), it won't be sent back to the server. But the first input tag will be. The string that you input into it will be sent back to the server as the "name" parameter because that's what we specified in the "name" attribute: -->
+
+
+<!-- A common beginner mistake is to forget to put the slash at the beginning of the relative URL, watch out for it. -->
+

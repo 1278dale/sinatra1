@@ -1,0 +1,3 @@
+HTML:::::::
+
+HTML language consists of tags, enclosed in angle brackets. They usually come in pairs but sometimes they don't. For example, below is an example of an HTML code for an image inside a div tag - it stands for 'division'. A div tag usually signifies a section, a division of a document. The first < div > is called the opening tag and the last < /div > is called the closing tag. Note that the closing tag has a slash after the angle bracket.
